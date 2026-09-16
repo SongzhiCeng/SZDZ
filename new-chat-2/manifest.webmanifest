@@ -1,0 +1,13 @@
+{
+  "name": "小家 · 家庭共享空间",
+  "short_name": "小家",
+  "description": "一家人的共享生活空间",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbfaf5",
+  "theme_color": "#355f47",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#355f47" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <title>小家 · 家庭共享空间</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="interaction.css" />
+  <link rel="stylesheet" href="app-actions.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">⌂</span><span>小家</span></a>
+      <div class="family-chip"><span class="avatar peach">林</span><div><b>林的温暖小家</b><small>4 位成员</small></div><button>⌄</button></div>
+      <nav>
+        <p>家庭空间</p>
+        <button class="nav-item active" data-page="home"><i>⌂</i>今日<span></span></button>
+        <button class="nav-item" data-page="ledger"><i>◫</i>家庭账本<span></span></button>
+        <button class="nav-item" data-page="calendar"><i>□</i>共享日历<span class="dot"></span></button>
+        <button class="nav-item" data-page="chores"><i>✓</i>家务管理<span class="badge">3</span></button>
+        <button class="nav-item" data-page="plans"><i>⌁</i>项目规划<span></span></button>
+        <button class="nav-item" data-page="links"><i>↗</i>链接收藏<span></span></button>
+        <p>生活与趣味</p>
+        <button class="nav-item" data-page="moments"><i>♡</i>家庭时光<span></span></button>
+        <button class="nav-item" data-page="fun"><i>✦</i>趣味空间<span></span></button>
+      </nav>
+      <div class="sidebar-bottom"><button class="nav-item" data-page="settings"><i>⚙</i>成员与设置</button><div class="user"><span class="avatar blue">周</span><span>周末</span><b>⌄</b></div></div>
+    </aside>
+
+    <main>
+      <header><div><p class="eyebrow">星期二 · 9 月 16 日</p><h1 id="page-title">早上好，周末 <span>☀️</span></h1></div><div class="head-actions"><button class="icon-btn">⌕</button><button class="icon-btn bell">♧<b></b></button><button class="new-btn" id="newBtn">＋ 新建</button></div></header>
+
+      <section class="page active" id="home">
+        <div class="hero"><div class="hero-copy"><span class="today-label">TODAY · 09.16</span><h2>把平凡的日子<br>过成值得记住的事。</h2><p>今天是和家人好好相处的第 1,248 天</p></div><div class="sun"><span>☀</span></div><div class="cloud c1">☁</div><div class="cloud c2">☁</div></div>
+        <div class="dashboard-grid">
+          <section class="card schedule"><div class="card-title"><div><span class="mini-icon coral">□</span><h3>今日安排</h3></div><button class="text-btn">查看日历 →</button></div><div class="timeline"><div class="event"><time>08:30</time><span class="line amber"></span><div><b>送小满去学校</b><small>周末 · 林晓</small></div></div><div class="event"><time>18:30</time><span class="line blue-line"></span><div><b>家庭晚餐 · 外婆生日</b><small>全体成员 · 家里</small></div></div><div class="event muted"><time>20:30</time><span class="line green-line"></span><div><b>周末大扫除分工</b><small>周末 · 林晓</small></div></div></div></section>
+          <section class="card chores"><div class="card-title"><div><span class="mini-icon lavender">✓</span><h3>待办家务</h3></div><span class="tiny-count">3 项</span></div><div class="chore-list"><label><input type="checkbox"><span class="check"></span><span>给绿植浇水</span><em class="avatar tiny blue">周</em></label><label><input type="checkbox"><span class="check"></span><span>倒厨余垃圾</span><em class="avatar tiny peach">林</em></label><label><input type="checkbox"><span class="check"></span><span>整理旅行清单</span><em class="avatar tiny yellow">小</em></label></div><button class="add-row">＋ 添加一项</button></section>
+          <section class="card budget"><div class="card-title"><div><span class="mini-icon mint">◫</span><h3>本月账本</h3></div><button class="text-btn">明细 →</button></div><div class="money"><small>本月支出</small><strong>¥ 6,284<span>.50</span></strong><i>↑ 8.2% <em>较上月</em></i></div><div class="progress"><span style="width:72%"></span></div><div class="budget-foot"><span>预算 ¥8,700</span><b>还剩 ¥2,415</b></div></section>
+        </div>
+        <section class="section-heading"><div><h2>正在进行的计划</h2><p>一起期待，也一起完成</p></div><button class="text-btn">所有计划 →</button></section>
+        <div class="plans-row">
+          <article class="plan-card travel"><span class="tag">进行中</span><div class="plan-emoji">🏔️</div><div><h3>十一 · 川西之旅</h3><p>倒计时 16 天 · 已完成 65%</p><div class="avatars"><span class="avatar tiny blue">周</span><span class="avatar tiny peach">林</span><span class="avatar tiny yellow">小</span><span class="avatar tiny purple">乐</span></div></div><button>···</button></article>
+          <article class="plan-card study"><span class="tag">筹备中</span><div class="plan-emoji">🎓</div><div><h3>小满的留学申请</h3><p>7 个待办 · 截止 12 月 1 日</p><div class="mini-progress"><span style="width:28%"></span></div></div><button>···</button></article>
+          <button class="add-plan">＋<span>创建新计划</span></button>
+        </div>
+        <div class="bottom-grid"><section class="card moments"><div class="card-title"><div><span class="mini-icon pink">♡</span><h3>家庭时光</h3></div><button class="text-btn">去看看 →</button></div><div class="moment-post"><div class="photo">🌻</div><div><p><b>林晓</b> 刚刚更新了一条动态</p><strong>“今晚的月亮真圆呀，像小满画的饼。”</strong><small>♡ 3 人喜欢　 · 2 条评论</small></div></div></section><section class="wish card"><span>✦</span><p>家庭心愿墙</p><h3>明年夏天，一起去看海</h3><div><span class="avatar tiny blue">周</span><span class="avatar tiny peach">林</span><span class="avatar tiny yellow">小</span><b>3 人想去</b></div></section></div>
+      </section>
+
+      <section class="page simple-page" id="ledger"><div class="page-banner mint-bg"><span>◫</span><div><h2>家庭账本</h2><p>每一笔开销，都让生活更有数。</p></div><button class="new-btn">＋ 记一笔</button></div><div class="stat-cards"><div><small>本月支出</small><b>¥6,284.50</b><em>↑ 8.2%</em></div><div><small>本月收入</small><b>¥18,500.00</b><em class="good">正常</em></div><div><small>预算结余</small><b>¥2,415.50</b><em class="good">72% 已使用</em></div></div><section class="card table-card"><h3>最近记录</h3><div class="record"><span class="record-icon">🥦</span><div><b>超市采购</b><small>今天 · 林晓</small></div><em>餐饮</em><strong>- ¥ 268.50</strong></div><div class="record"><span class="record-icon">🚕</span><div><b>打车</b><small>昨天 · 周末</small></div><em>交通</em><strong>- ¥ 36.00</strong></div></section></section>
+      <section class="page simple-page" id="calendar"><div class="page-banner blue-bg"><span>□</span><div><h2>共享日历</h2><p>每个人的时间，汇成一家人的安排。</p></div><button class="new-btn">＋ 新日程</button></div><div class="calendar-box card"><div class="cal-head"><b>2026 年 9 月</b><span>‹　今天　›</span></div><div class="week"><b>一</b><b>二</b><b>三</b><b>四</b><b>五</b><b>六</b><b>日</b></div><div class="dates"><span>14</span><span>15</span><span class="selected">16<i>晚餐</i></span><span>17</span><span>18</span><span>19<i>大扫除</i></span><span>20</span></div></div></section>
+      <section class="page simple-page" id="chores"><div class="page-banner lavender-bg"><span>✓</span><div><h2>家务管理</h2><p>让付出被看见，让家更轻松。</p></div><button class="new-btn">＋ 添加家务</button></div><div class="chore-board"><div class="board-col"><h3>待完成 <b>3</b></h3><article>给绿植浇水 <span class="avatar tiny blue">周</span></article><article>倒厨余垃圾 <span class="avatar tiny peach">林</span></article></div><div class="board-col"><h3>进行中 <b>1</b></h3><article>整理旅行清单 <span class="avatar tiny yellow">小</span></article></div><div class="board-col done"><h3>已完成 <b>8</b></h3><article>更换床单 ✓</article></div></div></section>
+      <section class="page simple-page" id="plans"><div class="page-banner orange-bg"><span>⌁</span><div><h2>项目规划</h2><p>旅行、成长和每一个共同的目标。</p></div><button class="new-btn">＋ 新建计划</button></div><div class="project-list"><article class="project-large travel"><span>🏔️</span><div><small>进行中 · 65%</small><h2>十一 · 川西之旅</h2><p>12 个任务 · 4 位参与者 · 还有 16 天</p></div></article><article class="project-large study"><span>🎓</span><div><small>筹备中 · 28%</small><h2>小满的留学申请</h2><p>7 个待办 · 截止 12 月 1 日</p></div></article></div></section>
+      <section class="page simple-page" id="links"><div class="page-banner cream-bg"><span>↗</span><div><h2>链接收藏库</h2><p>把有用、有趣的链接收进家里。</p></div><button class="new-btn">＋ 收藏链接</button></div><div class="link-grid"><article><span>✈️</span><b>川西旅行攻略合集</b><small>旅行 · 8 个链接</small></article><article><span>🍳</span><b>家常菜灵感</b><small>生活 · 24 个链接</small></article><article><span>📚</span><b>小满的留学资料</b><small>学习 · 16 个链接</small></article></div></section>
+      <section class="page simple-page" id="moments"><div class="page-banner pink-bg"><span>♡</span><div><h2>家庭时光</h2><p>记录我们正在一起经历的日子。</p></div><button class="new-btn">＋ 发动态</button></div><div class="memory-layout"><section class="card wish-wall"><small>✦ 家庭心愿墙</small><h2>明年夏天，一起去看海</h2><p>这个愿望被 3 位家人点亮</p><button>＋ 写下一个心愿</button></section><section class="card post-big"><span class="avatar peach">林</span><b>林晓</b><small>今天 09:18</small><h3>今晚的月亮真圆呀，像小满画的饼。 🌕</h3><div class="post-art">🌕</div></section></div></section>
+      <section class="page simple-page" id="fun"><div class="page-banner fun-bg"><span>✦</span><div><h2>趣味空间</h2><p>一起玩，一起攒下快乐。</p></div><button class="new-btn">＋ 创建房间</button></div><div class="fun-grid"><article><span>🎮</span><h3>家庭小游戏</h3><p>双人 / 多人在线房间</p><button>开始玩</button></article><article><span>🎟️</span><h3>积分与权益</h3><p>用努力兑换小惊喜</p><button>去兑换</button></article><article><span>🎲</span><h3>趣味工具</h3><p>抽签器 · 默契问卷 · 故事接龙</p><button>打开工具</button></article></div></section>
+      <section class="page simple-page" id="settings"><div class="page-banner gray-bg"><span>⚙</span><div><h2>成员与权限</h2><p>一起管理这个温暖的小家。</p></div><button class="new-btn">＋ 邀请成员</button></div><section class="card members"><div><span class="avatar blue">周</span><b>周末</b><small>管理员 · 爸爸</small><em>全部权限</em></div><div><span class="avatar peach">林</span><b>林晓</b><small>管理员 · 妈妈</small><em>全部权限</em></div><div><span class="avatar yellow">小</span><b>小满</b><small>成员 · 女儿</small><em>基础权限</em></div></section></section>
+    </main>
+  </div>
+  <div class="modal" id="modal"><div class="modal-card"><button class="close">×</button><span>✦</span><h2>新建内容</h2><p>选择要添加到家庭空间的内容</p><div class="modal-options"><button>□<small>日程</small></button><button>✓<small>家务</small></button><button>⌁<small>计划</small></button><button>♡<small>动态</small></button></div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
